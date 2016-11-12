@@ -12,6 +12,7 @@ body{
 	background: #fff;
 	width: 960px;
 	margin: 0 auto;
+
 }
 
 a{
@@ -87,15 +88,14 @@ b{
 }
 
 #content{
-	/*background-image: url('assets/images/gplaypattern.png');*/
 	width: 960px;
 	float: 	left;
-	background: #ddd;
+	/*background: #ddd;*/
 	padding: 10px;
 	overflow: hidden;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 1.5;
-	/*height: auto;*/
+	background: url("../images/gplaypattern.png");
 }
 
 #main, #connect{
@@ -136,23 +136,12 @@ nav .selected {
 
 
 .container{
-	/*min-height: 100%;*/
 	max-width: 960px;
 	width: 100%;
-	/*height: auto;*/
-	/*height: 100%;*/
-	/*background: #fff;*/
 	clear: both;
 	margin: 0 auto;
 	margin-bottom: -60px;
 }
-
-/*.container:after {
-	content: "";
-	display: block;
-	height: 60px;
-
-}*/
 
 .footer, .push{
 	height: 60px;
@@ -217,44 +206,57 @@ nav .selected {
 }
 
 /*Media Query */
-/*Screen width is 980 px*/
-@media screen and(max-width: 980px){
-	.container{
-		/*width: 100%;*/
-
-	}
-
-}
 
 /*Screen width is 768px*/
 @media screen and (max-width: 768px) {
-	.container{
+	.container, #content, #header, body, #main, #connect{
 		width: 100%;
+	}	
+
+	#my-name{
+		width: 25%;
 	}
+	#nav{
+		margin-top: 2%;
+		margin-right: 3%;
+		width: 60%;
+	}
+	.portafolio-main{
+		padding: 10px 0px 0px 0px;
+		left: 9%;
+		margin-right: 10%;
+		position: relative;
+	}
+
+	.portafolio-content{
+		width: 100%;
+		position: absolute;
+	}	
 }
 
 /*Screen width is 640px*/
 @media screen and (max-width: 640px) {
-	.container, #content, #header, body, #main{
-		/*max-width: 640px;*/
+	.container, #content, #header, body, #main, #connect{
 		width: 100%;
-		/*overflow: auto;*/
 	}
 	#my-name{
-/*		clear: both;*/
 		width: 30%;
-/*		padding: 0;
-		margin: 0;
-		float: left;*/
 	}
-	#connect{
-		clear: both;
-	
-	}
+
 	#nav{
-		/*clear: both;*/
-		width: 65%;
-		/*padding: auto;*/
-		/*text-align: right;*/
+		margin-top: 2%;
+		margin-right: 3%;
+		width: 60%;
+	}
+	.portafolio-main{
+		padding: 10px 0px 0px 0px;
+		left: 0;
+		margin: 2%;
+		position: relative;
+	}
+
+	.portafolio-content{
+		width: 100%;
+		position: absolute;
 	}
 }
